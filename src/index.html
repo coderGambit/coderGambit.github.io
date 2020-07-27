@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Bunny Jump</title>
+    <script src="javascript/animator.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="javascript/enemies.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="javascript/playerCharacter.js" type="text/javascript" defer charset="UTF-8"></script>
+    <script src="javascript/script.js" type="text/javascript" defer charset="UTF-8"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="shortcut icon" href="assets/img/web_icon.png" />
+
+    <meta charset="utf-8" />
+    <meta name="description" content="A simple platformer HTML5 Canvas Game" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, Canvas" />
+    <meta name="author" content="Rondell Borel" />
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="HUD">
+
+            <p id="score">Score: </p>
+            <p id="time">Time: 0</p>
+
+        </div>
+        <canvas id="backgroundCanvas" width="800px" height="800px"></canvas>
+        <canvas id="foregroundCanvas" width="800px" height="800px"></canvas>
+        <canvas id="groundCanvas" width="800px" height="800px"></canvas>
+        <canvas id="enemyCanvas" width="800px" height="800px"></canvas>
+
+        <div id="gameOver">
+
+            <div id="gameOverOptions">
+
+                <p class="gameOverText">GAME OVER</p>
+                <p id="scoreText">Your Score</p>
+                <p class="restart" onclick="restart()">Restart</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Audio Controls</legend>
+            <input id="sfx" type="checkbox" name="sfx" value="SFX" checked="true"
+                onchange="toggleSFX()"><label>SFX</label><br>
+            <input id="music" type="checkbox" name="music" value="MUSIC" checked="true"
+                onchange="toggleMusic()"><label>Music</label>
+
+        </fieldset>
+
+        <fieldset id="player-controls-info">
+
+            <legend>Player Controls</legend>
+            <ul>
+                <li>Go Left: &larr;</li>
+                <li>Go Right: &rarr;</li>
+                <li>Jump: &uarr;, space</li>
+            </ul>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

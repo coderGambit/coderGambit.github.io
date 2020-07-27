@@ -1,0 +1,30 @@
+{
+  "name": "bunny-jump",
+  "version": "1.0.0",
+  "description": "A simple html canvas game",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "canvas",
+    "game",
+    "adventure"
+  ],
+  "author": "Rondell Borel",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "browsersync": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.1",
+    "gulp-watch": "^5.0.1"
+  }
+}

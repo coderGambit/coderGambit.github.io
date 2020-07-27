@@ -1,24 +1,2 @@
-function Animator(){
-    
-};
-
-Animator.prototype.cubicEaseIn = function (currentTime, startValue, distance, totalTime) {
-	currentTime /= totalTime;
-	return distance * currentTime * currentTime * currentTime + startValue;
-};
-
-Animator.prototype.cubicEaseOut = function (currentTime, startValue, distance, totalTime){
-	
-    currentTime /= totalTime;
-	currentTime--;
-	return distance * (currentTime * currentTime * currentTime + 1) + startValue;
-};
-
-Animator.prototype.cubicEaseInOut = function (currentTime, startValue, distance, totalTime){
-    
-   currentTime /= totalTime/2;
-    
-	if (currentTime < 1) return distance / 2 * currentTime*currentTime * currentTime + startValue;
-	currentTime -= 2;
-	return distance / 2 * (currentTime * currentTime * currentTime + 2) + startValue;
-};
+function Animator(){}Animator.prototype.cubicEaseIn=function(t,n,o,r){return o*(t/=r)*t*t+n},Animator.prototype.cubicEaseOut=function(t,n,o,r){return t/=r,o*(--t*t*t+1)+n},Animator.prototype.cubicEaseInOut=function(t,n,o,r){return(t/=r/2)<1?o/2*t*t*t+n:o/2*((t-=2)*t*t+2)+n};
+//# sourceMappingURL=animator.js.map
